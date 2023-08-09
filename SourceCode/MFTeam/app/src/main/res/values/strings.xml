@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MyAppCustom</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_favorites">Favorites</string>
+    <string name="nav_account">Accounts</string>
+    <string name="nav_myprofile">MyProfile</string>
+    <string name="nav_logout">Log Out</string>
+    <string name="nav_history">History</string>
+    <string name="nav_drawer_open">Open Navigation Drawer</string>
+    <string name="nav_drawer_close">Close Navigation Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cart_icon_description">Cart</string>
+</resources>
