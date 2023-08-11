@@ -34,16 +34,55 @@
                     android:contentDescription="@string/cart_icon_description"
                     android:onClick="onCartIconClick"
                     android:layout_gravity="end"
-                    android:layout_marginEnd="5dp"/>
+                    android:layout_marginEnd="20dp"
+                    android:background="@null"/>
+
+                <ImageButton
+                    android:id="@+id/noteButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/note_icon"
+                    android:contentDescription="@string/cart_icon_description"
+                    android:onClick="onCartIconClick"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="20dp"
+                    android:background="@null"/>
 
             </androidx.appcompat.widget.Toolbar>
         </com.google.android.material.appbar.AppBarLayout>
 
+
+        <!--Content View-->
         <FrameLayout
             android:id="@+id/content_frame_id"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+            <!--banner-->
+            <LinearLayout
+                android:id="@+id/banner_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+
+                <!--make banner images-->
+                <!--ViewPager cho phép bạn tạo giao diện mà người dùng có thể trượt qua các
+                trang hoặc các hình ảnh khác nhau như một loại "slider"-->
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewpager2_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"/>
+
+                <!--make banner icon oval img(hình tron hiển thị chuyển trang)-->
+                <me.relex.circleindicator.CircleIndicator3
+                    android:id="@+id/circle3_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    app:ci_drawable="@drawable/oval_indicator"/>
+            </LinearLayout>
         </FrameLayout>
+
 
     </LinearLayout>
 
